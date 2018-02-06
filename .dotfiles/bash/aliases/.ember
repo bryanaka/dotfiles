@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Ember
+alias ems='ember server'
+alias emt='ember test'
+alias emg='ember generate'

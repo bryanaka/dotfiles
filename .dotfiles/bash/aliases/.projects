@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Shippo
+SHIPPO_PATH='$HOME/projects/consulting/shippo'
+
+alias shippopy='cd $SHIPPO_PATH/shippo && vagrant ssh -- -A'
+alias shippo='cd $SHIPPO_PATH/shippo-frontend && ember server'

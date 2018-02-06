@@ -37,4 +37,10 @@ link_autocomplete '.iterm2_shell_integration.bash'
 ########################################
 # Aliases
 ########################################
-link_alias '.aliases'
+link_alias '.general'
+link_alias '.macos'
+link_alias '.dot-git'
+link_alias '.vagrant'
+link_alias '.yarn'
+link_alias '.ember'
+link_alias '.projects'

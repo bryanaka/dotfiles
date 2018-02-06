@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Vagrant
+alias vst='vagrant halt'
+alias vup='vagrant up'
+alias vsh='vagrant ssh -- -A'
+alias vre='vagrant halt && vagrant up'

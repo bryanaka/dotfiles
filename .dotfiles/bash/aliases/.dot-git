@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Git
+alias gp='git push'

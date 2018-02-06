@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Yarn
+alias yt='yarn test'
+alias yi='yarn install'
+alias yr='yarn run'

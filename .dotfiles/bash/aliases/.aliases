@@ -1,32 +1,3 @@
 #!/usr/bin/env bash
 
 alias aliases='vim ~/.dotfiles/aliases'
-
-# Git
-alias gp='git push'
-
-# Google Chrome
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
-
-# Shippo
-alias s-py='cd $HOME/projects/consulting/shippo/shippo && vssh'
-alias s-js='cd $HOME/projects/consulting/shippo/shippo-frontend && ems'
-
-# Ember
-alias ems='ember server'
-alias emt='ember test'
-alias emg='ember generate'
-
-# Yarn
-alias yt='yarn test'
-alias yi='yarn install'
-alias yr='yarn run'
-
-# Vagrant
-alias vst='vagrant halt'
-alias vup='vagrant up'
-alias vsh='vagrant ssh -- -A'
-alias vre='vagrant halt && vagrant up'
-
-# MacOS
