@@ -1,6 +1,9 @@
+#!/usr/bin/env bash
+
 # z.sh
 zpath="$(brew --prefix)/etc/profile.d/z.sh"
 [ -s $zpath ] && source $zpath
+
 # bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion

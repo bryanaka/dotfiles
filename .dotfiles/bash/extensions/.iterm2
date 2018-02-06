@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# iterm2
+test -e "${HOME}/autocomplete/.iterm2_shell_integration.bash" && . "${HOME}/autocomplete/.iterm2_shell_integration.bash"
