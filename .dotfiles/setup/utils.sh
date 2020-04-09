@@ -10,6 +10,7 @@ function source_all_the_things {
   [ -s "$HOME/.bashrc" ] && \. "$HOME/.bashrc"
   [ -s "$HOME/.profile" ] && \. "$HOME/.profile"
   [ -s "$HOME/.bash_profile" ] && \. "$HOME/.bash_profile"
+  [ -s "$HOME/.config/fish/config.fish" ] && \. "$HOME/.config/fish/config.fish"
   [ -s "$HOME/.zshrc" ] && \. "$HOME/.zshrc"
   source_nvm
 }
