@@ -1,3 +1,6 @@
+[user]
+        email = bryanaka0@gmail.com
+        name = Bryan Robles
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -11,7 +14,10 @@
         BC = !git branch -vv | grep ': gone]' | grep -v '\*' | awk '{print \$1}' | xargs git branch -D
         lb = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'
 	unstage = reset HEAD --
-	discard = !git checkout -- 
+	discard = !git checkout --
+	Push = push --force-with-lease
+	PUSH = push --force
+	push-up = !git push origin \"$(git symbolic-ref --short HEAD)\"
 [core]
 	excludesfile = /Users/bryan/.gitignore_global
 [difftool "sourcetree"]
@@ -20,9 +26,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[user]
-	email = bryanaka0@gmail.com
-	name = Bryan Robles
 [commit]
 	template = /Users/bryan/.stCommitMsg
 [credential]
