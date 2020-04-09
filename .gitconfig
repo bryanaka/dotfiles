@@ -7,6 +7,11 @@
 	co = checkout
 	s = status
 	br = branch
+        bc = !git branch -vv | grep ': gone]' | grep -v '\*' | awk '{print \$1}'
+        BC = !git branch -vv | grep ': gone]' | grep -v '\*' | awk '{print \$1}' | xargs git branch -D
+        lb = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'
+	unstage = reset HEAD --
+	discard = !git checkout -- 
 [core]
 	excludesfile = /Users/bryan/.gitignore_global
 [difftool "sourcetree"]
