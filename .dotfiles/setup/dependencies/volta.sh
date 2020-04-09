@@ -4,8 +4,6 @@
 
 if [ "$(program_is_installed volta)" == 1 ]; then
     echo_pass "Volta"
-    echo "Updating Volta..."
-    echo "INSERT UPDATE HERE"
 else
     echo_fail "Volta"
     echo "Installing Volta..."
